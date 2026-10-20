@@ -1,0 +1,19 @@
+
+<div class="videoDivSection">   
+    
+        <div *ngFor="let item of videosFromTuneSelectionToVideoResults?.items; let i = index"  [ngClass]='ReturnCSSClass(videosFromTuneSelectionToVideoResults?.items?.length, i)'>
+            <iframe class="videoIFrame"
+                [src]="('https://www.youtube.com/embed/' + item.id.videoId + '?controls=1') | youtube : 'resourceUrl'"
+                title="YouTube video player"                 
+                frameborder="0" 
+                allow="accelerometer; autoplay; modestbranding; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+        
+     
+   
+   
+</div>
+

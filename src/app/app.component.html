@@ -1,0 +1,15 @@
+<div class="navigationPos">
+    <navigation (btnAboutClick)="btnAboutClick($event)" (btnSuggestASongClick)="btnSuggestASongClick($event)" (btnGetSongVideosClick)="btnGetSongVideosClick()">    
+    </navigation>
+</div>
+     
+<dmheader (decadeLinkClicked)="DecadeLinkHandler($event)" [artistsObservable]=artistsObservable>   
+</dmheader>
+
+<div class="mainBody">
+    <tune-selection *ngIf="visible" [decadeValue]="DecadeId" (msgToVideoResults)="FwdVideosFromTuneSelectionToVideoResults($event)" (msgToHeaderArtistLoadCompletion)="FwdArtistsObservableFromTuneSelectionToHeader($event)"></tune-selection>
+    <video-results *ngIf="visible" [videosFromTuneSelectionToVideoResults]=videosFromTuneSelectionToVideoResults></video-results>
+    <about *ngIf="aboutVisible"></about>
+    <suggestsong *ngIf="suggestASongVisible"></suggestsong>
+</div>
+<dmfooter></dmfooter>

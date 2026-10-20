@@ -1,0 +1,28 @@
+<div class="suggestSongContrastBorder"></div>
+<div class="suggestSongContent">    
+    <div class="container-fluid">
+        <div class="row tuneSelection">        
+            <div class="col-lg-3 tuneSelectionPad" >
+              <label for="suggestedArtistInput" class="tuneSelectionLabelPad">Artist Name:</label>
+              <input name="suggestedArtist" id="suggestedArtistInput" [(ngModel)]="suggestedArtist" class="tuneSelectionOptions"/>                                     
+            </div>
+            <div class="col-lg-3 tuneSelectionPad">
+              <label for="suggestedSongInput" class="tuneSelectionLabelPad">Song Title:</label>
+              <input name="suggestedSong" id="suggestedSongInput" [(ngModel)]="suggestedSong" class="tuneSelectionOptions"/>                
+            </div>        
+            <div class="col-lg-3 tuneSelectionPad">
+              <label for="suggestedDecadeSelect" class="tuneSelectionLabelPad">Decade:</label>
+              <select name="suggestedDecadeSelect" id="suggestedDecadeSelectInput" [(ngModel)]="suggestedDecadeSelect" class="tuneSelectionOptions">
+                <option value="1">1980s</option>
+                <option value="2">1990s</option>
+                <option value="3">2000s</option>
+                <option value="4">2010s</option>                
+              </select>
+            </div>
+            <div class="col-lg-3 tuneSelectionPad">
+              <button type="button" id="suggestVideoButton" class="btn btn-primary commonButton" (click)='InsertSongSuggestion()'>Submit</button>
+            </div>        
+        </div>   
+    </div>
+</div>
+<div class="suggestSongContrastBorder"></div>

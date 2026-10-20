@@ -1,0 +1,35 @@
+<input type="hidden" [(ngModel)]="Videos">
+<div class="container-fluid">
+    <div class="row tuneSelection">        
+        <div class="col-lg-3 tuneSelectionPad" >
+          <label for="artist" class="tuneSelectionLabelPad">1. Choose an Artist:</label>
+          <select name="artist" id="artists" class="tuneSelectionOptions" [(ngModel)]="selectedArtist" #myArtistSelect (change)='GetSongsByArtistAndDecade()'>
+            <option value="default">Select an Artist</option>
+            <option *ngFor="let artist of Artists" [ngValue]="artist">{{artist.artistName}}</option>            
+          </select>
+        </div>
+        <div class="col-lg-3 tuneSelectionPad">
+          <label for="aong" class="tuneSelectionLabelPad">2. Choose a Song:</label>
+          <select name="song" id="songs" class="tuneSelectionOptions" [(ngModel)]="selectedSong" #mySongSelect>
+            <option value="default">Select a Song</option>            
+            <option *ngFor="let song of Songs" [ngValue]="song">{{song.songName}}</option>
+          </select>
+        </div>        
+        <div class="col-lg-3 tuneSelectionPad">
+          <label for="Number of Results" class="tuneSelectionLabelPad">Video Count:</label>
+          <select name="resultQuantity" id="resultQuantity" class="tuneSelectionOptions" [(ngModel)]="selectedResultQuantity" #myResultSelect>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five</option>              
+          </select>
+        </div>
+        <div class="col-lg-3 tuneSelectionPad">
+          <button type="button" id="getVideoButton" class="btn btn-primary commonButton" (click)='SearchYoutubeVideos()'>Get Videos</button>
+        </div>        
+    </div>   
+</div>
+
+
+

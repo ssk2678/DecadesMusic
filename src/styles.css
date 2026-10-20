@@ -1,0 +1,344 @@
+html, body { height: 100%;   } 
+
+/* Header */
+.header{
+    background-color: #000000;
+    height: 20%;
+}
+.decadeLink {
+    margin-top: 2%;  
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.decadeLink a {    
+    color: #a955f7;       
+}
+
+.decadeLink a:visited {
+    text-decoration: none;
+}
+  
+.decadeLink a:hover, a:active {
+    color: #42067a; 
+    text-decoration: none;
+    background-color: #fa8072;
+    
+}
+
+.decadeLink ul {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;   
+    margin: 0;
+    padding: 0;
+}
+.decadeLink li {
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+    
+}
+
+/* Navigation Links */
+.infoLink{
+    background-color: #000000;
+    color:#fa8072;
+    font-size: 17.5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 5%;
+    float:right;
+    padding-top: 2%;
+    padding-right: 2%;    
+}
+
+.infoLink a{
+    color:#fa8072;
+}
+
+.infoLink a:hover, a:active {
+    
+    text-decoration: none;
+    color: #fc9e93;    
+}
+
+.navigationPos {
+    margin-right: 5%;
+}
+
+/* Footer */
+.footer{
+    background-color:black;
+    height: 10%;
+    color:#fa8072;
+    overflow: hidden;   
+    padding: 0px;
+    
+}
+
+.footer p {
+    letter-spacing: 0.20em;
+    text-align: center;    
+    text-transform: uppercase;
+    font-size: 0.80em;
+    color:#fa8072;
+    height: 50%;
+    padding-top: 2%;
+    
+}
+
+.mainBody{
+    height: 70%;
+}
+
+/* Tune Selection */
+
+.tuneSelection {
+    background-image: linear-gradient(rgba(255,0,0,0), rgb(250,128,114));       
+}
+
+.tuneSelectionPad {
+    margin-top: 1.5%;    
+    margin-bottom: 1.5%;
+    
+}
+
+.tuneSelectionLabelPad {
+    padding-right: 6.5%;    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+}
+
+
+.tuneSelectionOptions {
+    border-radius: 7.25px;
+    background-color: #fa8072;
+    border-color: #cc95ff;
+    border-width: 2.5px;
+    color: #e7e7e7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 55%;
+    
+}
+
+#getVideoButton{
+    margin-left: 12.5%;
+    width: 86.0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #cc95ff;
+    color: #e7e7e7;
+    border-color: #fa6d5d;
+    border-width: 2.75px;
+    border-radius: 12px;
+}
+
+#getVideoButton:hover{
+    
+    background-color: #42067a;    
+    border-color: #fa6d5d;
+   
+}
+
+/* Video Results */
+
+.videoDivSection{
+    height: 85%;
+    width: 100%;
+    background-image: linear-gradient(rgb(250,128,114), #a955f7); 
+        
+}
+
+.videoDivOneOne{
+    height: 80%;
+    width:  15%;
+    margin-left: 40.0%;
+    margin-top: 2.5%;
+    background-image: linear-gradient(rgb(187, 187, 187), rgb(68, 68, 68));
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    float: left;
+    
+    
+}
+
+.videoDivTwoOne{
+    height: 80%;
+    width:  15%;
+    margin-left: 31.0%;
+    margin-top: 2.5%;
+    background-image: linear-gradient(rgb(187, 187, 187), rgb(68, 68, 68));
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    float: left;
+    
+    
+}
+
+.videoDivThreeOne{
+    height: 80%;
+    width:  15%;
+    margin-left: 20%;
+    margin-top: 2.5%;
+    background-image: linear-gradient(rgb(187, 187, 187), rgb(68, 68, 68));
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    float: left;
+    
+    
+}
+
+.videoDivFourOne{
+    height: 80%;
+    width:  15%;
+    margin-left: 12.0%;
+    margin-top: 2.5%;
+    background-image: linear-gradient(rgb(187, 187, 187), rgb(68, 68, 68));
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    float: left;    
+
+}
+
+.videoDivFiveOne{
+    height: 80%;
+    width:  15%;
+    margin-left: 2.2%;
+    margin-top: 2.5%;
+    background-image: linear-gradient(rgb(187, 187, 187), rgb(68, 68, 68));
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    float: left;
+   
+    
+}
+
+.videoDivTwo{
+    height: 80%;
+    width:  15%;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    background-image: linear-gradient(rgb(187, 187, 187), rgb(68, 68, 68));
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    float: left;
+    
+    
+}
+
+.videoDivThree{
+    height: 80%;
+    width:  15%;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    background-image: linear-gradient(rgb(187, 187, 187), rgb(68, 68, 68));
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    float: left;
+    
+    
+}
+
+.videoDivFour{
+    height: 80%;
+    width:  15%;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    background-image: linear-gradient(rgb(187, 187, 187), rgb(68, 68, 68));
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    float: left;
+    
+    
+}
+
+.videoDivFive{
+    height: 80%;
+    width:  15%;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    background-image: linear-gradient(rgb(187, 187, 187), rgb(68, 68, 68));
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    float: left;
+    
+    
+}
+
+.videoIFrame {
+    
+    width: 100%;
+    height: 56.25%;
+    margin-top: 33.0%;
+}
+
+/* About Page */
+.aboutContrastBorder {
+    background-color:#fa8072;
+    width: 100%;
+    height: 5%;
+}
+
+.aboutContent {
+    background-color: #000000;
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    padding-top: 5%;
+    color: #a955f7;
+    font-style: italic;
+}
+
+/* Suggest A Song Page */
+.suggestSongContrastBorder {
+    background-color:#a955f7;
+    width: 100%;
+    height: 5%;
+}
+
+.suggestSongContent{
+    background-color: #000000;
+    width: 100%;
+    height: 90%;
+}
+
+.suggestSongContent {
+   
+    width: 100%;
+    height: 90%;   
+    padding-top: 5%;
+   
+}
+
+/* Common */
+
+.commonButton{
+    margin-left: 12.5%;
+    width: 86.0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #cc95ff;
+    color: #e7e7e7;
+    border-color: #fa6d5d;
+    border-width: 2.75px;
+    border-radius: 12px;
+}
+
+.commonButton:hover{
+    
+    background-color: #42067a;    
+    border-color: #fa6d5d;
+   
+}
+
+.loadingIcon{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.loadingIconDiv{
+    width: 100px;
+    height: 100px;
+    margin-left: 43.5%;
+}

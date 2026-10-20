@@ -1,0 +1,37 @@
+<div class="header">
+    <div class="container-fluid" > 
+        <div class="row">
+            <div class="col-lg-1"></div>                         
+            <div class="col-lg-3">                
+                    <img [src]="decadesMusicLOGO" class="" alt="DecadesMusic">                                   
+            </div>            
+            <div class="col-lg-6 decadeLink" >
+              <div  class="loadingIconDiv" > 
+                <img *ngIf="loadingVisible" [src]="decadesMusicLoadingIcon" class="loadingIcon" >
+              </div>
+              <div>
+                <ul class="nav nav-pills">
+                  <li></li>                                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);" (click)='SendDecadeId("2")'>1980s</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);" (click)='SendDecadeId("3")'>1990s</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);" (click)='SendDecadeId("4")'>2000s</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="javascript:void(0);" (click)='SendDecadeId("5")'>2010s</a>
+                  </li>
+                 <li></li>
+              </ul>
+              </div>                
+            </div>            
+            <div class="col-lg-2"></div>            
+                                         
+        </div>    
+    </div>         
+</div>
+
+
