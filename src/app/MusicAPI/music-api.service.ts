@@ -36,7 +36,7 @@ export class MusicAPIService implements IMusicAPIService{
   }
 
   InsertSongSuggestion(songSuggestion: SongSuggestion): void {
-    const insertSongSuggestionURL = `${this.musicAPIURL}/AddSongSuggestion`;
+    const insertSongSuggestionURL = `${this.musicAPIURL}/AddSuggestedSong`;
     const httpOptions = {
       headers: new HttpHeaders({'Content-Type': 'application/json'})
     }
